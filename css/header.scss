@@ -1,8 +1,10 @@
-header {
-  background-color: #cbe86b;
+@import 'variables';
+
+.header--main {
+  background-color: $special-shirt;
   width: 700px;
   margin: auto;
-  border-bottom: 5px solid #bbdb55;
+  border-bottom: 5px solid $special-shirt-shadow;
 }
 
 .n-signin-form {
@@ -22,41 +24,38 @@ header {
   margin: 1px;
 }
 
-#header-title {
+.header-navbar {
   font-family: Arial, sans-serif;
   padding-left: 10px;
   padding-top: 20px;
 }
 
-div.navbar {
+.navbar {
   width: 350px;
   margin: auto;
 }
 
-.navbar__ul {
+.navbar__list {
   list-style: none;
 }
 
-.navbar__li {
+.navbar__list__item {
   display: inline;
-
 }
 
-.navbar__li a {
-  color: black;
-  background-color: f2e9e1;
-  border-bottom: 2px solid #e1ccbc;
+.navbar__list__item__link {
+  color: $cant-express-myself;
+  background-color: $write-it;
+  border-bottom: 2px solid $write-it-shadow;
   padding: 6px;
   &:hover {
-    border-bottom: 5px solid #e1ccbc;
+    border-bottom: 5px solid $write-it-shadow;
     padding-bottom: 3px;
   }
 }
 
-
-#navbar__li__middle a {
-  border-left: 2px solid #e1ccbc;
-  border-right: 2px solid #e1ccbc;
+.navbar__list__item__link--middle {
+  border-left: 2px solid $write-it-shadow;
+  border-right: 2px solid $write-it-shadow;
   margin: -4px;
 }
-

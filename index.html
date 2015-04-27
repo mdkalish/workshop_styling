@@ -1,27 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
     <title>Styling Workshop</title>
-    <link rel="stylesheet" href="css/fresh_news.css" type="text/css">
-    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
   </head>
   <body>
-    <header>
+    <header class="header header--main">
       <form class="n-signin-form" name="signin_form" action="/">
-        <h1 id="header-title">Fresh News</h1>
+        <h1 class="header-navbar">Fresh News</h1>
         <fieldset class="n-signin-form__fieldset">
-          <input class="n-signin-form__input" type="text" name="email" placeholder="Email">
-          <input class="n-signin-form__input" type="password" name="password" placeholder="Password">
+          <input class="n-signin-form__input" name="email" type="text" placeholder="Email">
+          <input class="n-signin-form__input" name="password" type="password" placeholder="Password">
           <input class="n-signin-form__input" type="submit" value="Sign in">
         </fieldset>
       </form>
     </header>
       <div class="navbar">
-        <ul class="navbar__ul">
-          <li class="navbar__li"><a href="#">Popular</a></li>
-          <li class="navbar__li" id="navbar__li__middle"><a href="#">Recent</a></li>
-          <li class="navbar__li"><a href="#">Submit a story</a></li>
+        <ul class="navbar__list">
+          <li class="navbar__list__item"><a class="navbar__list__item__link" href="#">Popular</a></li>
+          <li class="navbar__list__item"><a class="navbar__list__item__link navbar__list__item__link--middle" href="#">Recent</a></li>
+          <li class="navbar__list__item"><a class="navbar__list__item__link" href="#">Submit a story</a></li>
         </ul>
       </div>
   </body>
 </html>
-
