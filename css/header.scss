@@ -1,0 +1,62 @@
+header {
+  background-color: #cbe86b;
+  width: 700px;
+  margin: auto;
+  border-bottom: 5px solid #bbdb55;
+}
+
+.n-signin-form {
+  display: block;
+}
+
+.n-signin-form__fieldset {
+  width: 200px;
+  float: right;
+  border: none;
+  margin-top: -68px;
+  margin-right: -8px;
+}
+
+.n-signin-form__input {
+  padding: 3px;
+  margin: 1px;
+}
+
+#header-title {
+  font-family: Arial, sans-serif;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+div.navbar {
+  width: 350px;
+  margin: auto;
+}
+
+.navbar__ul {
+  list-style: none;
+}
+
+.navbar__li {
+  display: inline;
+
+}
+
+.navbar__li a {
+  color: black;
+  background-color: f2e9e1;
+  border-bottom: 2px solid #e1ccbc;
+  padding: 6px;
+  &:hover {
+    border-bottom: 5px solid #e1ccbc;
+    padding-bottom: 3px;
+  }
+}
+
+
+#navbar__li__middle a {
+  border-left: 2px solid #e1ccbc;
+  border-right: 2px solid #e1ccbc;
+  margin: -4px;
+}
+
