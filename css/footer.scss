@@ -1,0 +1,27 @@
+@import 'variables';
+
+.footer-main {
+  width: inherit;
+  padding-top: 30px;
+  margin: auto;
+}
+
+.footer__search-field {
+  margin: 0 10px 10px 0;
+}
+
+.footer-navbar {
+  float: right;
+  margin-top: -40px;
+}
+
+.footer-navbar > .navbar__list >
+.navbar__list__item > .navbar__list__item__link {
+  background-color: $special-shirt;
+  border-color: $special-shirt-shadow;
+  padding: 10px;
+  &:hover {
+    border-bottom: 5px solid $special-shirt-shadow;
+    padding-bottom: 7px;
+  }
+}
