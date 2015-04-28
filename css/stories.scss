@@ -1,0 +1,56 @@
+@import 'variables';
+
+.n-stories {
+  width: inherit;
+}
+
+.n-stories__list-item {
+  height: 60px;
+  background-color: $write-it;
+  border-bottom: 4px solid $write-it-shadow;
+  padding: 15px;
+  margin: 20px;
+}
+
+.n-stories__list-item__votes-box {
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: $special-shirt;
+  margin: 5px;
+}
+
+.n-stories__list-item__arrows {
+  position: absolute;
+  width: 10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  margin-left: 60px;
+}
+
+.n-stories__list-item__arrows__up {
+  border: inherit;
+  border-bottom: 10px solid black;
+  margin: 17px -5px 5px -5px;
+}
+
+.n-stories__list-item__arrows__down {
+  border: inherit;
+  border-top: 10px solid black;
+  margin: -15px 5px 5px -5px;
+}
+
+.n-stories__list-item__text {
+  margin-left: 95px;
+  padding-top: 10px;
+}
+
+.n-stories__list-item__header {
+  margin: auto;
+}
+
+.n-stories__list-item__link {
+  color: inherit;
+}
