@@ -4,10 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
     <title>Styling Workshop</title>
+    <script src="javascripts/modal.js"></script>
     <link rel="stylesheet" type="text/css" href="css/application.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/stories.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
   </head>
   <body>
     <header class="header header--main">
@@ -24,7 +26,7 @@
       <ul class="navbar__list">
         <li class="navbar__list__item"><a class="navbar__list__item__link" href="#">Popular</a></li>
         <li class="navbar__list__item"><a class="navbar__list__item__link navbar__list__item__link--middle" href="#">Recent</a></li>
-        <li class="navbar__list__item"><a class="navbar__list__item__link" href="#">Submit a story</a></li>
+        <li class="navbar__list__item"><a class="navbar__list__item__link" href="#" onclick='overlay()'>Submit a story</a></li>
       </ul>
     </div>
     <div class="n-stories">
@@ -76,5 +78,28 @@
         </ul>
       </div>
     </footer>
+    <div class="modal" id="js-modal">
+      <div class="modal__content">
+        <div class="header--modal">
+          <h1>Submit a story</h1>
+        </div>
+        <form class="modal__submit-story__form" name="submit_story_form" action="/">
+          <fieldset class="modal__submit-story__fieldset">
+            <div class="modal__submit-story__input" >
+              <label for="title">Title</label>
+              <input name="title" type="text">
+            </div>
+            <div class="modal__submit-story__input">
+              <label for="url">URL</label>
+              <input name="url" type="url">
+            </div>
+            <div class="modal__submit-story__submit">
+              <input type="submit" value="Submit">
+              <a href='#' onclick='overlay()'>Cancel</a>
+            </div>
+          </fieldset>
+        </form>
+    </div>
+    </div>
   </body>
 </html>

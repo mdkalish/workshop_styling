@@ -1,0 +1,55 @@
+@import 'variables';
+
+.modal {
+  position: fixed;
+  width: inherit;
+  height: 100%;
+  background-color: rgba(255,255,255,0.5);
+  visibility: hidden;
+  margin-top: -700px;
+}
+
+.modal__content {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  margin: 300px auto;
+  padding: 50px;
+}
+
+.header--modal {
+  background-color: $special-shirt;
+  border-bottom: 5px solid $special-shirt-shadow;
+  padding: 10px;
+  margin: -50px;
+  & > h1 {
+    padding-left: 15px;
+  }
+}
+
+.modal__submit-story__form {
+  margin-top: 50px;
+}
+
+.modal__submit-story__fieldset {
+  border: none;
+}
+
+.modal__submit-story__input {
+  position: relative;
+  background-color: $write-it;
+  border-bottom: 5px solid $write-it-shadow;
+  padding: 15px;
+  margin: 25px -25px;
+  & > label {
+    position: absolute;
+  }
+  & > input {
+    margin-left: 60px;
+  }
+}
+
+.modal__submit-story__submit {
+  margin-left: 60px;
+}
