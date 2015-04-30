@@ -1,4 +1,4 @@
 function overlay() {
-  el = document.getElementById("js-modal");
+  el = document.querySelector(".curtain");
   el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
 }

@@ -1,61 +1,23 @@
 @import 'variables';
 
-.header--main {
-  width: inherit;
+.header{
   background-color: $special-shirt;
   border-bottom: 5px solid $special-shirt-shadow;
-}
-
-.n-signin-form {
-  display: block;
-}
-
-.n-signin-form__fieldset {
-  float: right;
-  width: 200px;
-  border: none;
-  margin-top: -68px;
-  margin-right: -8px;
-}
-
-.n-signin-form__input {
-  padding: 3px;
-  margin: 1px;
-}
-
-.header-navbar {
-  padding-left: 10px;
-  padding-top: 20px;
-}
-
-.navbar {
-  width: 350px;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.navbar__list {
-  list-style: none;
-}
-
-.navbar__list__item {
-  display: inline;
-}
-
-.navbar__list__item__link {
-  color: $cant-express-myself;
-  background-color: $write-it;
-  border-bottom: 2px solid $write-it-shadow;
-  padding: 6px;
-  &:hover {
-    border-bottom: 5px solid $write-it-shadow;
-    padding-bottom: 3px;
+  h1 {
+    margin: 0;
+  }
+  .signin-form {
+    float: right;
+    width: 210px;
+    border: none;
+    margin-top: -80px;
   }
 }
 
-.navbar__list__item__link--middle {
-  border-left: 2px solid $write-it-shadow;
-  border-right: 2px solid $write-it-shadow;
-  margin: -5px;
+.navbar--main {
+  width: 350px;
+  .list__item__link {
+    background-color: $write-it;
+    border-color: $write-it-shadow;
+  }
 }

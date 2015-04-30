@@ -12,94 +12,96 @@
     <link rel="stylesheet" type="text/css" href="css/modal.css">
   </head>
   <body>
-    <header class="header header--main">
-      <form class="n-signin-form" name="signin_form" action="/">
-        <h1 class="header-navbar">Fresh News</h1>
-        <fieldset class="n-signin-form__fieldset">
-          <input class="n-signin-form__input" name="email" type="text" placeholder="Email">
-          <input class="n-signin-form__input" name="password" type="password" placeholder="Password">
-          <input class="n-signin-form__input" type="submit" value="Sign in">
-        </fieldset>
-      </form>
-    </header>
-    <div class="navbar">
-      <ul class="navbar__list">
-        <li class="navbar__list__item"><a class="navbar__list__item__link" href="#">Popular</a></li>
-        <li class="navbar__list__item"><a class="navbar__list__item__link navbar__list__item__link--middle" href="#">Recent</a></li>
-        <li class="navbar__list__item"><a class="navbar__list__item__link" href="#" onclick='overlay()'>Submit a story</a></li>
-      </ul>
-    </div>
-    <div class="n-stories">
-      <div class="n-stories__list-item">
-        <div class="n-stories__list-item__votes-box">12</div>
-        <div class="n-stories__list-item__arrows">
-          <div class="n-stories__list-item__arrows__up"></div><br />
-          <div class="n-stories__list-item__arrows__down"></div>
-        </div>
-        <div class="n-stories__list-item__text">
-          <h3 class="n-stories__list-item__header">Scala.js no longer experimental</h3>
-          <a class="n-stories__list-item__link" href="http://scala-lang.org/news/2015/02/05/scala-js-no-longer-experimental.html">scala-lang.org</a>
-        </div>
-      </div>
-
-      <div class="n-stories__list-item">
-        <div class="n-stories__list-item__votes-box">8</div>
-        <div class="n-stories__list-item__arrows">
-          <div class="n-stories__list-item__arrows__up"></div><br />
-          <div class="n-stories__list-item__arrows__down"></div>
-        </div>
-        <div class="n-stories__list-item__text">
-          <h3 class="n-stories__list-item__header">A new paper claims that evolution has stopped in a bacterial species. Is it true?</h3>
-          <a class="n-stories__list-item__link" href="https://whyevolutionistrue.wordpress.com/2015/02/04/a-new-paper-claims-that-evolution-has-stopped-in-a-bacterial-species-is-it-true/">whyevolutionistrue.wordpress.com</a>
-        </div>
-      </div>
-
-      <div class="n-stories__list-item">
-        <div class="n-stories__list-item__votes-box">6</div>
-        <div class="n-stories__list-item__arrows">
-          <div class="n-stories__list-item__arrows__up"></div><br />
-          <div class="n-stories__list-item__arrows__down"></div>
-        </div>
-        <div class="n-stories__list-item__text">
-          <h3 class="n-stories__list-item__header">You’re Missing the Point of Server-Side Rendered JavaScript Apps</h3>
-          <a class="n-stories__list-item__link" href="http://tomdale.net/2015/02/youre-missing-the-point-of-server-side-rendered-javascript-apps/">tomdale.net</a>
-        </div>
-      </div>
-    </div>
-    <footer class="footer footer-main">
-      <form>
-        <input class="footer__search-field" name="footer-search" type="text" placeholder="Search">
-      </form>
-      <div class="footer-navbar">
+    <div class="wrapper">
+      <header class="header">
+        <form name="signin_form" action="/">
+          <h1 class="title">Fresh News</h1>
+          <fieldset class="signin-form">
+            <input class="input" name="email" type="text" placeholder="Email">
+            <input class="input" name="password" type="password" placeholder="Password">
+            <input class="input" type="submit" value="Sign in">
+          </fieldset>
+        </form>
+      </header>
+      <div class="navbar navbar--main">
         <ul class="navbar__list">
-          <li class="navbar__list__item"><a class="navbar__list__item__link" href="#">About</a></li>
-          <li class="navbar__list__item"><a class="navbar__list__item__link navbar__list__item__link--middle" href="#">FAQ</a></li>
-          <li class="navbar__list__item"><a class="navbar__list__item__link" href="#">Contact</a></li>
+          <li class="list__item"><a class="list__item__link" href="#">Popular</a></li>
+          <li class="list__item"><a class="list__item__link list__item__link--middle" href="#">Recent</a></li>
+          <li class="list__item"><a class="list__item__link" href="#" onclick='overlay()'>Submit a story</a></li>
         </ul>
       </div>
-    </footer>
-    <div class="modal" id="js-modal">
-      <div class="modal__content">
-        <div class="header--modal">
+      <div class="stories-list">
+        <div class="stories-list__item">
+            <div class="votes-box">12</div>
+            <div class="arrows">
+              <div class="arrows__up"></div><br />
+              <div class="arrows__down"></div>
+            </div>
+            <div class="stories-list__item__text">
+              <h3 class="story-title">Scala.js no longer experimental</h3>
+              <a href="http://scala-lang.org/news/2015/02/05/scala-js-no-longer-experimental.html">scala-lang.org</a>
+            </div>
+          </div>
+
+        <div class="stories-list__item">
+            <div class="votes-box">8</div>
+            <div class="arrows">
+              <div class="arrows__up"></div><br />
+              <div class="arrows__down"></div>
+            </div>
+            <div class="stories-list__item__text">
+              <h3 class="story-title">A new paper claims that evolution has stopped in a bacterial species. Is it true?</h3>
+              <a href="https://whyevolutionistrue.wordpress.com/2015/02/04/a-new-paper-claims-that-evolution-has-stopped-in-a-bacterial-species-is-it-true/">whyevolutionistrue.wordpress.com</a>
+          </div>
+        </div>
+
+        <div class="stories-list__item">
+            <div class="votes-box">6</div>
+            <div class="arrows">
+              <div class="arrows__up"></div><br />
+              <div class="arrows__down"></div>
+            </div>
+            <div class="stories-list__item__text">
+              <h3 class="story-title">You’re Missing the Point of Server-Side Rendered JavaScript Apps</h3>
+              <a href="http://tomdale.net/2015/02/youre-missing-the-point-of-server-side-rendered-javascript-apps/">tomdale.net</a>
+            </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <form>
+          <input class="input" type="text" placeholder="Search">
+        </form>
+        <div class="navbar navbar--footer">
+          <ul class="navbar__list">
+            <li class="list__item"><a class="list__item__link" href="#">About</a></li>
+            <li class="list__item"><a class="list__item__link list__item__link--middle" href="#">FAQ</a></li>
+            <li class="list__item"><a class="list__item__link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <div class="curtain">
+      <div class="modal">
+        <div class="header header--modal">
           <h1>Submit a story</h1>
         </div>
-        <form class="modal__submit-story__form" name="submit_story_form" action="/">
-          <fieldset class="modal__submit-story__fieldset">
-            <div class="modal__submit-story__input" >
-              <label for="title">Title</label>
-              <input name="title" type="text">
+        <form class="modal__form" action="/">
+          <fieldset class="modal__form__fieldset">
+            <div class="modal__form__field" >
+              <label class="modal__form__label" for="title">Title</label>
+              <input class="modal__form__input" name="title" type="text">
             </div>
-            <div class="modal__submit-story__input">
-              <label for="url">URL</label>
-              <input name="url" type="url">
+            <div class="modal__form__field">
+              <label class="modal__form__label" for="url">URL</label>
+              <input class="modal__form__input" name="url" type="url">
             </div>
-            <div class="modal__submit-story__submit">
+            <div class="modal__form__submit">
               <input type="submit" value="Submit">
               <a href='#' onclick='overlay()'>Cancel</a>
             </div>
           </fieldset>
         </form>
-    </div>
+      </div>
     </div>
   </body>
 </html>
