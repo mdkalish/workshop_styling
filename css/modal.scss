@@ -1,5 +1,3 @@
-@import 'variables';
-
 .header--modal {
   padding: 20px;
   margin: -50px;
@@ -36,5 +34,9 @@
 }
 
 .modal__form__input {
+  margin-left: 60px;
+}
+
+.modal__form__submit {
   margin-left: 60px;
 }
